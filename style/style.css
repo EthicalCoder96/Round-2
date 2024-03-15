@@ -1,0 +1,213 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: poppins,sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+nav{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    list-style:none;
+}
+.content{
+    width: 100%;
+    display: flex;
+}
+.content .left{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.lists h3{
+    font-size: 2em;
+}
+.lists h1{
+    font-size: 4em;
+}
+.content .right{
+    width: 50%;
+}
+.content .right img{
+    width: 100%;
+}
+
+.shoes__list{
+    height: 100vh;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+.shoes__list .box{
+    background-color: #242424;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.collection{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+.collection__head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.collection__head p{
+    font-size: 0.9em;
+}
+.box__1{
+    background-image: url('../shoes/download\ \(2\).jpeg');
+}
+.box__2{
+    background-image: url('../shoes/download\ \(3\).jpeg');
+}
+.box__3{
+    background-image: url('../shoes/download\ \(4\).jpeg');
+}
+.box__4{
+    background-image: url('../shoes/Nike\ Air\ Jordan\ 1.jpeg');
+}
+.box__5{
+    background-image: url('../shoes/Nike\ Blazer\ Mid\ \'77\ LX.jpeg');
+}
+.box__6{
+    background-image: url('../shoes/NIKE\ BLAZER\ SUEDE\ 77\ SUEDE.jpeg');
+}
+.box__7{
+    background-image: url('../shoes/Nike\ Dunk\ High\ \'Gold\ Wheat\'.jpeg');
+}
+.box__8{
+    background-image: url('../shoes/Sleek\ and\ Stylish_\ Swedish\ Men\'s\ Shoes\ from\ Vagabond.jpeg');
+}
+.small_product{
+    height: 50vh;
+    width: 100%;
+    background-color: #5cd3d1;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+} 
+.small_product .right__product{
+    width: 300px;
+    height: 300px;
+    background-image: url('../shoes/pngwing.com.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 40px;
+}
+footer{
+    padding: 30px;
+    height: 400px;
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr;
+    column-gap: 20px;
+}
+.footer_elem{
+    background: #000;
+}
+.shop__infos{
+    height: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.shop{
+    height: 500px;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px; */
+    /* background-color: red; */
+}
+.shop video{
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+}
+.shop .info{
+    width: 50%;
+    height: 100%;
+}
+footer{
+    color: #fff;
+}
+.footer_elem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.footer_elem ul{
+    list-style: none;
+    color: #fff;
+}
+.small_product .left__product{
+    width: 50%;
+    margin-left: 20px;
+}
+
+.small_product .left__product p{
+    font-size: 0.9em;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+
+}
+/* .video_1{
+    display: flex;
+} */
+.box{
+    transition: 500ms;
+    color: #fff;
+    font-size: 2em;
+    cursor: pointer;
+}
+.box:hover::after{
+    content: attr(data-text);
+    height: 100%;
+    width: 100%;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000071;
+}
+.small_product{
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+}
+.small_product .left__product,
+.small_product .right__product{
+    transform: translateZ(20px);
+}

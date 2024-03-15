@@ -1,0 +1,45 @@
+button{
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: #000000;
+    color: #fff;
+    margin-top: 20px;
+}
+.video{
+    height: 60vh;
+    /* background-color: #000; */
+    margin: 10px 0px;
+    display: flex;
+    padding: 20px;
+    gap: 10px;
+}
+.video .left__vdo{
+    width: 50%;
+    height: 100%;
+    /* background: #c42929; */
+}
+.video .right__vdo{
+    width: 50%;
+    height: 100%;
+    /* background: #33b139; */
+}
+.video .right__vdo h1{
+    margin-bottom: 20px;
+}
+.video .right__vdo p{
+    text-align: justify;
+}
+.video video{
+    height: 100%;
+    width: 100%;
+}
+p{
+    font-size: 0.9em;
+}
+.footer_elem{
+    transform-style: preserve-3d;
+}
+.footer_elem ul{
+    transform: translateZ(20px);
+}
